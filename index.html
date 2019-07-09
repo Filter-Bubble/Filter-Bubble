@@ -3,65 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style/bootstrap.min.css">
-    <style>
-    body {
-      background-color:#F3F1E1;
-      background-image: url("images/newspaper.jpg");
-      background-size: cover;
-    }
-    </style>
+	<title>
+		JEDS Study | Redirecting to Qualtrics Survey
+	</title>
+	<script type="text/javascript">
+		function makeid(length) {
+			var result = "";
+			var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+			var charactersLength = characters.length;
+			for (var i = 0; i < length; i++) {
+				result += characters.charAt(Math.floor(Math.random() * charactersLength));
+			}
+			return result;
+		}
+		function redirect()	{
+			var id = makeid(10);
+			window.location = "https://vuamsterdam.eu.qualtrics.com/jfe/form/SV_b3BpjjteY6l24Kx?id=" + id;
+		}
+		redirect();
+	</script>
 	</head>
-	
-<body>
-<div class = 'container-fluid p-4' style="background-color:rgba(247, 248, 249, 0.7)">
-<title>
-Web Historian | JEDS project
-</title>
-</head>
-<body>
-<h2 style="color:#271e5f;">Installeer de extensie Web Historian - Community Edition in jouw browser</h2>
-<br>
-<div class="row rounded p-3">
-  <div class='col m-2'>
-    <h3 style="color:#271e5f">Je apparaten synchroniseren</h3>
-    <p style="color:#271e5f">Om deel te nemen aan onze studie, moet je eerst twee stappen doen: Log in op je browser (op je desktop en mobiel) en schakel synchronisatie in. Hieronder geven we je links die je helpen alles in te stellen, het zou maar een paar minuten moeten duren. Volg gewoon de instructies van de browser die je regelmatig gebruikt. In het geval dat je twee verschillende gebruikt, volg de instructies voor beide. </p>
-<ul><b><a href="https://support.google.com/chrome/answer/185277" target="_blank">Instructies voor Chrome</a></b>
-</ul>
-<ul><b><a href="https://support.mozilla.org/nl/kb/hoe-stel-ik-sync-mijn-computer" target="_blank">Instructies voor Firefox</a></b>
-</ul>
-<ul><b><a href="https://www.opera.com/nl/help/account#signIn" target="_blank">Instructies voor Opera</a></b>
-</ul>
-<h3 style="color:#271e5f;">In-app browser uitschakelen</h3>
-  <p style="color:#271e5f">Sommige apps zoals Facebook en Twitter gebruiken hun eigen browser om links te openen. We zouden het op prijs stellen als je deze functie zou uitschakelen. <a href="https://www.technologyhint.com/disable-facebook-in-app-browser/" target="_blank">Het is slechts een paar clicks.</a> Let op: Werkt niet op iPhones.</p>
-</div>
-</div>
-<div class="row mt-4">
-  <div class="col" align="center">
-    <h3 style="color:#271e5f;">Heb je de bovenstaande stappen gevolgd voor alle apparaten? Dan ben je klaar om te gaan!</h3>
-    <p style="color:#271e5f;">Klik op de onderstaande link voor jouw browser om de Web Historian extensie te installeren. Wil je meer weten over wat deze extensie is? Klik dan <a href = 'http://webhistorian-explanation.tk' target="_blank">hier</a></p>
-  </div>
-</div>
-
-<div class="row">
-	<div class="col" align="center">
-	  <img src="images/firefox-logo-300x310.png" width=100 height=100>
-	  <br>
-	  <a href="extensions/Filter-Bubble-WebHistorian_Sync.xpi">Download de Firefox-add-on</a>
-	</div>
-	<div class="col" align="center">
-	  <img src="images/chrome-logo.svg" width=100 height=100>
-	  <br>
-	  <a href="https://chrome.google.com/webstore/detail/web-historian-community-e/imeghaeodoiplklbmfnkddfkkgaekkda" target="_blank">Download de Chrome extensie</a>
-	</div>
-	<div class="col" align="center">
-	  <img src="images/opera-logo.svg" width=100 height=100>
-	  <br>
-	  <a href="https://addons.opera.com/en/extensions/details/install-chrome-extensions/" target="_blank">Download de Opera extensie</a>
-	</div>
-  <!-- <div class="col" align="center"> -->
-    <!-- <img src="images/safari_icon_large.png" width=100 height=100> -->
-    <!-- <br> -->
-    <!-- <a href="extensions/WebHistorianSync.dmg" target="_blank">Download de Safari extensie</a> -->
-  <!-- </div> -->
-</div>
+	<body>
+		Click <a onclick="redirect()" href="#">here</a> if this page does not redirect automatically.
+	</body>
+</html>
